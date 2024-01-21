@@ -86,8 +86,32 @@ public class Solution {
 	
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	    Solution solution = new Solution();
+	    
+	    // Test case 1
+	    String S1 = "ab#c";
+	    String T1 = "ad#c";
+	    System.out.println("Test case 1: " + solution.backspaceCompare(S1, T1)); // true
+	    
+	    // Test case 2
+	    String S2 = "ab##";
+	    String T2 = "c#d#";
+	    System.out.println("Test case 2: " + solution.backspaceCompare(S2, T2)); // true
+	    
+	    // Test case 3
+	    String S3 = "a##c";
+	    String T3 = "#a#c";
+	    System.out.println("Test case 3: " + solution.backspaceCompare(S3, T3)); // true
+	    
+	    // Test case 4
+	    String S4 = "a#c";
+	    String T4 = "b";
+	    System.out.println("Test case 4: " + solution.backspaceCompare(S4, T4)); // false
+	    
+	    // Test case 5
+	    String S5 = "xywrrmp";
+	    String T5 = "xyw#rm#p";
+	    System.out.println("Test case 5: " + solution.backspaceCompare(S5, T5)); // true
 	}
 
 }

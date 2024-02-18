@@ -29,6 +29,8 @@ public class Solution {
 	
 	// To do this, you can do a linear scan...
 	
+	// But we are going to use something like a binary search...
+	
 	public int peakIndexInMountainArray(int[] A) {
 		int left = 0;
 		int right = A.length-1;
